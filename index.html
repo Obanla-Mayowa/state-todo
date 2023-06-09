@@ -10,15 +10,61 @@
     -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
+    <style>
+      main {
+        text-align: center;
+      }
+      .name {
+        font-size: 20px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      #btns {
+        width: 70px;
+        padding: 10px;
+        border: none;
+        color: rgb(255, 255, 255);
+        border-radius: 15%;
+        background-color: rgb(134, 32, 32);
+        margin: 3px;
+      }
+      #btn2 {
+        width: 70px;
+        padding: 10px;
+        border: none;
+        color: rgb(255, 255, 255);
+        border-radius: 15%;
+        background-color: rgb(32, 134, 63);    
+      }
+      #todoInput {
+        padding: 15px;
+      }
+      #addButton {
+        padding: 15px;
+        width: 10em;
+        border: 0;
+        font-size: 15px;
+        font-weight: bold;
+        color: aliceblue;
+        background-color: rgb(18, 45, 66);
+      }
+      .flex{
+      }
+    </style>
   </head>
   <body>
-    <main>
+    <main >
       <h1>Todo List</h1>
       <div>
         <input id="todoInput" />
         <button id="addButton">Add</button>
       </div>
-      <ul id="todoList"></ul>
+      <div class="flex">
+        <ul id="todoList"></ul>
+      </div>
+      
     </main>
     <script src="scripts.js"></script>
   </body>
